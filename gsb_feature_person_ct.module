@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ * Code for the GSB Feature Person Content Type feature.
+ */
+
+include_once 'gsb_feature_person_ct.features.inc';
+
+/**
+ * Implements hook_field_group_build_pre_render_alter().
+ * @param Array $elements by address.
+ */
+function gsb_feature_person_ct_field_group_build_pre_render_alter(&$element) {
+
+  if (isset($element['#id']) && $element['#id'] == 'gsb-person-node-form') {
+
+    $element['group_faculty_fields']['#states']['visible'][':input[name="field_affiliation_type[und][Faculty]"]'] = array(
+      array('checked' => TRUE),
+    );
+
+  }
+
+}
