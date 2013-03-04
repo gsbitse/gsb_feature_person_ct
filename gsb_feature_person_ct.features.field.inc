@@ -56,6 +56,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_description',
@@ -136,6 +142,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_person_entity_ref',
@@ -153,135 +165,6 @@ function gsb_feature_person_ct_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '2',
-      ),
-    ),
-  );
-
-  // Exported field: 'fieldable_panels_pane-gsb_person_fpp-field_display_style'.
-  $fields['fieldable_panels_pane-gsb_person_fpp-field_display_style'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_display_style',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'person-list-view' => 'List',
-          'person-grid-view' => 'Grid',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'gsb_person_fpp',
-      'default_value' => array(
-        0 => array(
-          'value' => 'person-list-view',
-        ),
-      ),
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => 3,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_display_style',
-      'label' => 'Display Style',
-      'required' => 1,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'fieldable_panels_pane-gsb_person_fpp-field_person_info'.
-  $fields['fieldable_panels_pane-gsb_person_fpp-field_person_info'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_person_info',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'locked' => '0',
-      'module' => 'field_collection',
-      'settings' => array(
-        'hide_blank_items' => 1,
-        'path' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'field_collection',
-    ),
-    'field_instance' => array(
-      'bundle' => 'gsb_person_fpp',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'field_collection',
-          'settings' => array(
-            'add' => 'Add',
-            'delete' => 'Delete',
-            'description' => TRUE,
-            'edit' => 'Edit',
-            'view_mode' => 'full',
-          ),
-          'type' => 'field_collection_view',
-          'weight' => 2,
-        ),
-        'ical' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'fieldable_panels_pane',
-      'field_name' => 'field_person_info',
-      'label' => 'Person Info',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'field_collection',
-        'settings' => array(),
-        'type' => 'field_collection_embed',
         'weight' => '2',
       ),
     ),
@@ -346,6 +229,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '4',
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '19',
         ),
       ),
       'entity_type' => 'node',
@@ -430,6 +319,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => '13',
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '13',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_affiliation_type',
@@ -507,6 +402,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '12',
         ),
       ),
       'entity_type' => 'node',
@@ -593,6 +494,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '11',
         ),
       ),
       'entity_type' => 'node',
@@ -685,6 +592,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => '11',
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '14',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_company',
@@ -772,6 +685,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'taxonomy_term_reference_link',
           'weight' => '3',
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '15',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_department',
@@ -850,6 +769,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '12',
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '18',
         ),
       ),
       'entity_type' => 'node',
@@ -936,6 +861,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '17',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_faculty_temp_field_1',
@@ -1021,6 +952,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '16',
         ),
       ),
       'entity_type' => 'node',
@@ -1109,6 +1046,13 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'text_plain',
           'weight' => '1',
+        ),
+        'tiny' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_plain',
+          'weight' => '0',
         ),
       ),
       'entity_type' => 'node',
@@ -1206,6 +1150,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'image',
           'weight' => '0',
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '10',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_headshot',
@@ -1297,6 +1247,13 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'text_plain',
           'weight' => '2',
         ),
+        'tiny' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_plain',
+          'weight' => '1',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_last_name',
@@ -1381,6 +1338,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '10',
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
       ),
       'entity_type' => 'node',
@@ -1467,6 +1430,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_person_short_title',
@@ -1552,6 +1521,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => 0,
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '2',
         ),
       ),
       'entity_type' => 'node',
@@ -1643,6 +1618,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => 0,
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '5',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_program',
@@ -1721,6 +1702,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'settings' => array(),
           'type' => 'hidden',
           'weight' => '5',
+        ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '6',
         ),
       ),
       'entity_type' => 'node',
@@ -1806,6 +1793,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => '7',
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '9',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_student_type',
@@ -1879,6 +1872,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'weight' => 0,
         ),
         'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '8',
+        ),
+        'tiny' => array(
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
@@ -1969,6 +1968,12 @@ function gsb_feature_person_ct_field_default_fields() {
           'type' => 'hidden',
           'weight' => '9',
         ),
+        'tiny' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '7',
+        ),
       ),
       'entity_type' => 'node',
       'field_name' => 'field_url',
@@ -2002,7 +2007,6 @@ function gsb_feature_person_ct_field_default_fields() {
   t('Company');
   t('Department');
   t('Description');
-  t('Display Style');
   t('Education');
   t('Faculty Temp Field 1');
   t('Faculty Temp Field 2');
@@ -2011,7 +2015,6 @@ function gsb_feature_person_ct_field_default_fields() {
   t('Last Name');
   t('Office Hours');
   t('Person Entity Ref');
-  t('Person Info');
   t('Person Short Title');
   t('Person Title');
   t('Program');
