@@ -170,6 +170,135 @@ function gsb_feature_person_ct_field_default_fields() {
     ),
   );
 
+// Exported field: 'fieldable_panels_pane-gsb_person_fpp-field_display_style'.
+$fields['fieldable_panels_pane-gsb_person_fpp-field_display_style'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_display_style',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'value' => array(
+          0 => 'value',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'list',
+      'settings' => array(
+        'allowed_values' => array(
+          'person-list-view' => 'List',
+          'person-grid-view' => 'Grid',
+        ),
+        'allowed_values_function' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'list_text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'gsb_person_fpp',
+      'default_value' => array(
+        0 => array(
+          'value' => 'person-list-view',
+        ),
+      ),
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => 3,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'fieldable_panels_pane',
+      'field_name' => 'field_display_style',
+      'label' => 'Display Style',
+      'required' => 1,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '1',
+      ),
+    ),
+  );
+
+  // Exported field: 'fieldable_panels_pane-gsb_person_fpp-field_person_info'.
+  $fields['fieldable_panels_pane-gsb_person_fpp-field_person_info'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_person_info',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'locked' => '0',
+      'module' => 'field_collection',
+      'settings' => array(
+        'hide_blank_items' => 1,
+        'path' => '',
+      ),
+      'translatable' => '0',
+      'type' => 'field_collection',
+    ),
+    'field_instance' => array(
+      'bundle' => 'gsb_person_fpp',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'field_collection',
+          'settings' => array(
+            'add' => 'Add',
+            'delete' => 'Delete',
+            'description' => TRUE,
+            'edit' => 'Edit',
+            'view_mode' => 'full',
+          ),
+          'type' => 'field_collection_view',
+          'weight' => 2,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'fieldable_panels_pane',
+      'field_name' => 'field_person_info',
+      'label' => 'Person Info',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'field_collection',
+        'settings' => array(),
+        'type' => 'field_collection_embed',
+        'weight' => '2',
+      ),
+    ),
+  );
+
   // Exported field: 'node-gsb_person-body'.
   $fields['node-gsb_person-body'] = array(
     'field_config' => array(
