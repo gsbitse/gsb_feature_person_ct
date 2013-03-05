@@ -65,7 +65,7 @@ function gsb_feature_person_ct_field_default_fields() {
       ),
       'entity_type' => 'field_collection_item',
       'field_name' => 'field_description',
-      'label' => 'Description',
+      'label' => 'Quote or Summary',
       'required' => 0,
       'settings' => array(
         'linkit' => array(
@@ -84,6 +84,7 @@ function gsb_feature_person_ct_field_default_fields() {
         'type' => 'text_textarea',
         'weight' => '3',
       ),
+      'workbench_access_field' => 0,
     ),
   );
 
@@ -170,8 +171,8 @@ function gsb_feature_person_ct_field_default_fields() {
     ),
   );
 
-// Exported field: 'fieldable_panels_pane-gsb_person_fpp-field_display_style'.
-$fields['fieldable_panels_pane-gsb_person_fpp-field_display_style'] = array(
+  // Exported field: 'fieldable_panels_pane-gsb_person_fpp-field_display_style'.
+  $fields['fieldable_panels_pane-gsb_person_fpp-field_display_style'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -2229,6 +2230,7 @@ $fields['fieldable_panels_pane-gsb_person_fpp-field_display_style'] = array(
   t('Company');
   t('Department');
   t('Description');
+  t('Display Style');
   t('Education');
   t('Faculty Temp Field 1');
   t('Faculty Temp Field 2');
@@ -2237,9 +2239,11 @@ $fields['fieldable_panels_pane-gsb_person_fpp-field_display_style'] = array(
   t('Last Name');
   t('Office Hours');
   t('Person Entity Ref');
+  t('Person Info');
   t('Person Short Title');
   t('Person Title');
   t('Program');
+  t('Quote or Summary');
   t('SUNetID');
   t('Short Bio');
   t('Student Type');
