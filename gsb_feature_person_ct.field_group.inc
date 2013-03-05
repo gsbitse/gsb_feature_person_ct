@@ -21,7 +21,7 @@ function gsb_feature_person_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni Fields',
-    'weight' => '25',
+    'weight' => '18',
     'children' => array(
       0 => 'field_alumni_temp_field_1',
       1 => 'field_alumni_temp_field_2',
@@ -49,7 +49,7 @@ function gsb_feature_person_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Faculty Fields',
-    'weight' => '25',
+    'weight' => '17',
     'children' => array(
       0 => 'field_faculty_temp_field_1',
       1 => 'field_faculty_temp_field_2',
@@ -65,6 +65,35 @@ function gsb_feature_person_ct_field_group_info() {
     ),
   );
   $export['group_faculty_fields|node|gsb_person|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_taxonomy|node|gsb_person|form';
+  $field_group->group_name = 'group_taxonomy';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'gsb_person';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Taxonomy',
+    'weight' => '19',
+    'children' => array(
+      0 => 'field_department',
+      1 => 'field_program',
+      2 => 'field_tag',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_taxonomy|node|gsb_person|form'] = $field_group;
 
   return $export;
 }
