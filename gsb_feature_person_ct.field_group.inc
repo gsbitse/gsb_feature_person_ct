@@ -21,7 +21,7 @@ function gsb_feature_person_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Alumni Fields',
-    'weight' => '18',
+    'weight' => '21',
     'children' => array(
       0 => 'field_alumni_temp_field_1',
       1 => 'field_alumni_temp_field_2',
@@ -49,7 +49,7 @@ function gsb_feature_person_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Faculty Fields',
-    'weight' => '17',
+    'weight' => '20',
     'children' => array(
       0 => 'field_faculty_temp_field_1',
       1 => 'field_faculty_temp_field_2',
@@ -77,11 +77,10 @@ function gsb_feature_person_ct_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Taxonomy',
-    'weight' => '19',
+    'weight' => '22',
     'children' => array(
       0 => 'field_department',
-      1 => 'field_program',
-      2 => 'field_tag',
+      1 => 'field_tag',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

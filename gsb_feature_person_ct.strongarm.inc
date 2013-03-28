@@ -44,13 +44,13 @@ function gsb_feature_person_ct_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '16',
+          'weight' => '26',
         ),
         'path' => array(
-          'weight' => '13',
+          'weight' => '24',
         ),
         'workbench_access' => array(
-          'weight' => '14',
+          'weight' => '25',
         ),
       ),
       'display' => array(),
